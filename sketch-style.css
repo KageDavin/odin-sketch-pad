@@ -1,0 +1,50 @@
+/* Universal box-sizing, padding, and margin reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    padding: 20px;
+}
+
+#buttonCommandCenter {
+    display: flex;
+    gap: 10px;
+}
+
+#buttonCommandCenter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 960px;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-square {
+    /* Flex-basis will be set dynamically by JavaScript */
+    background-color: white;
+}
+
+.hovered {
+    background-color: gray;
+    transition: background-color 0.3s ease;
+}
